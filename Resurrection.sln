@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{1EFE39DD-4665-159E-AD55-9A8C6D206EB0}") = "Resurrection", "Assembly-CSharp.csproj", "{C8F67194-7CF4-6696-7F38-DBD6C69074BD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8F67194-7CF4-6696-7F38-DBD6C69074BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8F67194-7CF4-6696-7F38-DBD6C69074BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8F67194-7CF4-6696-7F38-DBD6C69074BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8F67194-7CF4-6696-7F38-DBD6C69074BD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
