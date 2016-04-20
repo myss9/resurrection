@@ -25,7 +25,7 @@ using System.Threading;
         public void SendMessage(string message)
         {
             message.Trim();
-            byte[] Buffer = Encoding.ASCII.GetBytes((message).ToCharArray());
+			byte[] Buffer = Encoding.UTF8.GetBytes((message).ToCharArray());
             client.GetStream().Write(Buffer, 0, Buffer.Length);
             Chat.message.Add(message);
         }
@@ -45,7 +45,7 @@ using System.Threading;
                     }
                 }
                 if (Buffer.Count > 0)
-                    Chat.message.Add(Encoding.ASCII.GetString(Buffer.ToArray()));
+				Chat.message.Add(Encoding.UTF8.GetString(Buffer.ToArray()));
             }
         }
 
