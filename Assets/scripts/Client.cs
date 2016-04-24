@@ -30,6 +30,13 @@ using System.Threading;
             Chat.message.Add(message);
         }
 
+		public void SendJson(string json)
+		{
+			json.Trim();
+			byte[] Buffer = Encoding.UTF8.GetBytes(json);
+			client.GetStream().Write(Buffer, 0, Buffer.Length);
+		}
+
         static void Reader()
         {
             while (true)
