@@ -5,6 +5,7 @@ using System.Text;
 using System.Net.Sockets;
 using System.Net;
 using System.Threading;
+using UnityEngine;
 
     class Client
     {
@@ -51,8 +52,12 @@ using System.Threading;
                         Buffer.Add((byte)ReadByte);
                     }
                 }
-                if (Buffer.Count > 0)
-				Chat.message.Add(Encoding.UTF8.GetString(Buffer.ToArray()));
+				if (Buffer.Count > 0) 
+				{
+					String incomingMessage = Encoding.UTF8.GetString (Buffer.ToArray ());
+					Debug.Log("Incoming message: " + incomingMessage);
+					Chat.message.Add (incomingMessage);
+				}
             }
         }
 
